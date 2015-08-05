@@ -38,10 +38,6 @@ $(function() {
 
         recalcHeights();
 
-        // $('#load').on('click', function(e){
-        //   getData(callback);
-        // });
-
         $(window).on('scroll',
           $.throttle( 200, function(){
             if( ($(window).scrollTop() + windowHeight) > (bodyHeight - 300) ) getData(callback);
@@ -72,7 +68,6 @@ $(function() {
     function post() {
         //5."message"データストアにメッセージをプッシュする
         var content = escapeHTML($("#content").val());
-        myself = true;
 
         if (content && content !== "") {
             ds.push({
