@@ -1,6 +1,6 @@
 $(function() {
     //1.ミルクココアインスタンスを作成
-    var milkcocoa = new MilkCocoa("flagi9edsvtg.mlkcca.com");
+    var milkcocoa = new MilkCocoa("app_id.mlkcca.com");
 
     //2."message"データストアを作成
     var ds = milkcocoa.dataStore("message");
